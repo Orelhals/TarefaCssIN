@@ -18,8 +18,30 @@ header {
     font-size: 1.5rem;
   }
 
+  #foto-perfil {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+  }
+
   .perfil {
+    height: 584px;
     background-color: #f3f3f3;
+  }
+
+  .subtitulo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-left: 20px;
+  }
+
+  .about-me {
+    font-size: 1rem;
+    padding: 20px;
+  }
+
+  .lists {
+    height: 890px;
   }
 
   ul {
@@ -32,8 +54,13 @@ header {
   .card {
     width: 102px;
     height: 150px;
-    background-color: red;
+    background-color: #dfdfdf;
     border-radius: 10px;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  footer {
+    background-color: #c4c4c4;
+    height: 127px;
   }
 }
