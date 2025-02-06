@@ -1,0 +1,39 @@
+@import url("./reset.css");
+
+header {
+  background-color: #c4c4c4;
+  height: 109px;
+}
+
+@media (max-width: 428px) {
+  .container {
+    display: flex;
+    padding: 35px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .container,
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .perfil {
+    background-color: #f3f3f3;
+  }
+
+  ul {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+
+  .card {
+    width: 102px;
+    height: 150px;
+    background-color: red;
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+  }
+}
