@@ -1,166 +1,227 @@
 @import url("./reset.css");
 
+/* 🌎 Estilos padrão (Mobile First) */
 header {
   background-color: #c81d25;
   height: 109px;
 }
 
-@media (max-width: 428px) {
-  .container {
-    display: flex;
-    padding: 35px;
-    justify-content: space-between;
-    align-items: center;
-  }
+.container {
+  display: flex;
+  padding: 35px;
+  justify-content: space-between;
+  align-items: center;
+}
 
-  .container,
-  h1 {
-    font-size: 1.5rem;
-  }
+.container h1 {
+  font-size: 1.5rem;
+}
 
-  #foto-perfil {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
-  }
+#foto-perfil {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+}
 
-  .foto {
-    display: flex;
-    justify-content: center;
-    padding: 20px;
+.foto {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.perfil {
+  height: 584px;
+  background-color: #fae3d9;
+}
+
+.subtitulo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 20px;
+}
+
+.about-me {
+  font-size: 1rem;
+  padding: 20px;
+  font-weight: bold;
+}
+
+.lists {
+  height: 890px;
+  background-color: #e57373;
+}
+
+ul {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.card {
+  width: 102px;
+  height: 150px;
+  background-color: #dfdfdf;
+  border-radius: 10px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.75);
+  position: relative;
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+.card-text {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 5px;
+  border-radius: 3px;
+}
+
+.card-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.feedback {
+  background-color: #e57373;
+  height: 300px;
+}
+
+.feed-form {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+}
+
+.feed-form p {
+  background-color: #c81d25;
+  padding-bottom: 20px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.feedback-block {
+  display: block;
+  margin-bottom: 10px;
+  padding: 20px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.btn-enviar {
+  background-color: #c81d25;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: bold;
+  width: 100px;
+}
+
+.btn-contato {
+  background-color: #d7545b;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: bold;
+  width: 150px;
+}
+
+.input-feedback {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer {
+  background-color: #c81d25;
+  height: 127px;
+  padding: 10px;
+}
+
+.redes-sociais {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.redes-sociais a img {
+  width: 30px;
+}
+
+/* 📌 Estilos para telas maiores (Tablets e Desktops) */
+@media (min-width: 768px) {
+  .container h1 {
+    font-size: 2rem;
   }
 
   .perfil {
-    height: 584px;
-    background-color: #fae3d9;
-  }
-
-  .subtitulo {
-    font-size: 1.5rem;
-    font-weight: bold;
-    padding: 20px;
-  }
-
-  .about-me {
-    font-size: 1rem;
-    padding: 20px;
-    font-weight: bold;
+    height: 650px;
   }
 
   .lists {
-    height: 890px;
-    background-color: #e57373;
+    height: auto;
+    display: flex;
+    justify-content: center;
   }
 
   ul {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-    padding: 20px;
+    justify-content: center;
   }
 
   .card {
-    width: 102px;
-    height: 150px;
-    background-color: #dfdfdf;
-    border-radius: 10px;
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.75);
-    position: relative;
-    overflow: hidden;
-  }
-
-  .card img {
-    width: 100%;
-    height: 100%;
-    display: block;
-    margin: 0 auto;
-    border-radius: 10px;
-  }
-
-  .card-text {
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 5px;
-    border-radius: 3px;
-  }
-
-  .card-content {
-    position: relative;
-    width: 100%;
-    height: 100%;
+    width: 120px;
+    height: 180px;
   }
 
   .feedback {
-    background-color: #e57373;
-    height: 300px;
+    height: 350px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    padding: 50px;
   }
 
-  .feed-form {
-    display: flex;
-    flex-direction: column;
-    padding: 30px;
+  .perfil {
+    height: 700px;
   }
 
-  .feed-form p {
-    background-color: #c81d25;
-    padding-bottom: 20px;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
+  .subtitulo {
+    font-size: 2rem;
   }
 
-  .feedback-block {
-    display: block;
-    margin-bottom: 10px;
-    padding: 20px;
-    border-radius: 10px;
-    font-weight: bold;
+  .about-me {
+    font-size: 1.2rem;
   }
 
-  .btn-enviar {
-    background-color: #c81d25;
-    color: white;
-    border: none;
-    padding: 10px;
-    border-radius: 10px;
-    font-weight: bold;
-    width: 100px;
-  }
-
-  .btn-contato {
-    background-color: #d7545b;
-    color: white;
-    border: none;
-    padding: 10px;
-    border-radius: 10px;
-    font-weight: bold;
+  .card {
     width: 150px;
+    height: 200px;
   }
 
-  .input-feedback {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  .feedback {
+    height: 400px;
   }
 
-  footer {
-    background-color: #c81d25;
-    height: 127px;
-    padding: 10px;
-  }
-
-  .redes-sociais {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    padding: 20px;
-  }
-
-  .redes-sociais a img {
-    width: 30px;
+  .btn-enviar,
+  .btn-contato {
+    width: 200px;
+    padding: 15px;
   }
 }
