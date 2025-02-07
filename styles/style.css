@@ -193,13 +193,25 @@ footer {
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1440px) {
+  body {
+    height: 1152px;
+  }
+
+  header {
+    height: 109px;
+  }
+
   .container {
     padding: 50px;
   }
 
   .perfil {
     height: 700px;
+    display: flex;
+    justify-content: center;
+    padding: 35.5px 227px;
+    height: 318px;
   }
 
   .subtitulo {
@@ -211,8 +223,8 @@ footer {
   }
 
   .card {
-    width: 150px;
-    height: 200px;
+    width: 102px;
+    height: 150px;
   }
 
   .feedback {
@@ -223,5 +235,50 @@ footer {
   .btn-contato {
     width: 200px;
     padding: 15px;
+    cursor: pointer;
+  }
+
+  .lists {
+    display: flex;
+    height: 366px;
+  }
+
+  .feedback-block {
+    width: 1128px;
+  }
+
+  .text-feedback {
+    align-items: center;
+    justify-content: center;
+    padding-left: 100px;
+  }
+
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    padding: 0px 96.5px;
+  }
+
+  .btn-contato {
+    background-color: #d7545b;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    width: 150px;
+    transition: background-color 0.3s; /* Adiciona uma transição suave */
+  }
+
+  .btn-contato:hover {
+    background-color: green;
+  }
+
+  .input-feedback {
+    display: flex;
+    justify-content: end;
+    padding-right: 120px;
   }
 }
